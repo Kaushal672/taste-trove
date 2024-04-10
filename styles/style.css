@@ -179,9 +179,11 @@ label {
 }
 
 .banner-container > div {
-    background-image: url('/assets/banner4.jpg');
+    background-image: url('/assets/banner5.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /* background-position-x: right;
+    background-position-y: center; */
     background-position: bottom;
     height: 90%;
     margin-bottom: 40px;
@@ -195,6 +197,7 @@ label {
     font-size: 36px;
     width: 60%;
     text-align: justify;
+    color: black;
 }
 
 .banner-slogan + p {
