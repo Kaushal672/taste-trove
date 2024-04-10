@@ -168,8 +168,17 @@ label {
     font-size: 18px;
 }
 
+.banner-container {
+    background-color: #eff1ed;
+    height: 500px;
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .content {
-    margin-top: 100px;
     padding: 20px;
     display: flex;
     justify-content: center;
