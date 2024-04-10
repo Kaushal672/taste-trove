@@ -182,7 +182,7 @@ label {
     background-image: url('/assets/banner5.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position-x: right;
+     background-position-x: right;
     background-position-y: center; */
     background-position: bottom;
     height: 90%;
