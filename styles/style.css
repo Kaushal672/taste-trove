@@ -124,7 +124,7 @@ input[type='search'] {
     position: absolute;
     top: 0;
     right: 0;
-    width: 40px;
+    width: 50px;
     font-weight: bold;
     font-size: 16px;
     background: #29bf12;
@@ -133,7 +133,7 @@ input[type='search'] {
 
 input[type='search']:not(:placeholder-shown) {
     border-radius: 10px 0 0 10px;
-    width: calc(100% - 40px);
+    width: calc(100% - 50px);
 }
 
 input[type='search']:not(:placeholder-shown) + button {
@@ -170,12 +170,37 @@ label {
 
 .banner-container {
     background-color: #eff1ed;
-    height: 500px;
+    height: 600px;
     width: 100%;
     margin-top: 80px;
     padding-top: 50px;
     display: flex;
     justify-content: center;
+}
+
+.banner-container > div {
+    background-image: url('/assets/banner4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 90%;
+    margin-bottom: 40px;
+    width: 60%;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.banner-slogan {
+    text-transform: capitalize;
+    font-size: 36px;
+    width: 60%;
+    text-align: justify;
+}
+
+.banner-slogan + p {
+    margin-top: 10px;
+    width: 40%;
+    text-align: justify;
 }
 
 .content {
