@@ -21,7 +21,7 @@ body::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(), #000;
+  background: url("https://images.unsplash.com/photo-1498579809087-ef1e558fd1da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"), #000;
   background-position: center;
   background-size: cover;
 }
@@ -31,7 +31,7 @@ body::before {
   border-radius: 8px;
   padding: 30px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #29bf12;
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
 }
@@ -44,7 +44,7 @@ form {
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #29bf12;
 }
 
 .input-field {
@@ -58,7 +58,7 @@ h2 {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  color: #fff;
+  color: #29bf12;
   font-size: 16px;
   pointer-events: none;
   transition: 0.15s ease;
@@ -86,11 +86,11 @@ h2 {
   align-items: center;
   justify-content: space-between;
   margin: 25px 0 35px 0;
-  color: #fff;
+  color: #29bf12;
 }
 
 #remember {
-  accent-color: #fff;
+  accent-color: #29bf12;
 }
 
 .forget label {
@@ -103,7 +103,7 @@ h2 {
 }
 
 .wrapper a {
-  color: #efefef;
+  color: #29bf12;
   text-decoration: none;
 }
 
@@ -112,7 +112,7 @@ h2 {
 }
 
 button {
-  background: #fff;
+  background:#29bf12;
   color: #000;
   font-weight: 600;
   border: none;
@@ -125,13 +125,13 @@ button {
 }
 
 button:hover {
-  color: #fff;
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.15);
+  color: #29bf12;
+  border-color: #29bf12;
+  background: rgba(36, 31, 31, 0);
 }
 
 .register {
   text-align: center;
   margin-top: 30px;
-  color: #fff;
+  color: #29bf12;
 }
