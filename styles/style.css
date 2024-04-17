@@ -1,12 +1,11 @@
 * {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 header {
-    background-color: #eff1ed;
     height: 120px;
     width: 100%;
     display: flex;
@@ -14,11 +13,18 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    background-color: #eff1ed;
+    z-index: 99;
 }
 
 header.shrink {
     animation: shrink 300ms;
     height: 80px;
+}
+
+header.shrink .logo {
+    height: 50px;
+    width: 50px;
 }
 
 @keyframes shrink {
@@ -48,7 +54,7 @@ header.grow {
 .nav {
     display: flex;
     height: 100%;
-    width: 70%;
+    width: 80%;
     padding: 30px 20px 20px 40px;
     justify-content: center;
     align-items: center;
@@ -84,11 +90,26 @@ header.grow {
     font-size: 20px;
 }
 
+.logo-container {
+    display: flex;
+    width: 300px;
+    align-items: center;
+}
+
+.logo-container > h4 {
+    margin-left: 8px;
+    color: #00843c;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 24px;
+}
+
 .logo {
-    width: 180px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     border-radius: 20px;
+    transition: all 500ms;
 }
 
 .search-bar_container {
@@ -249,7 +270,7 @@ label {
 .card-back {
     height: 100%;
     width: 100%;
-    box-shadow: 0 1px 65px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: absolute;
     backface-visibility: hidden;
     border-radius: 10px;
@@ -261,12 +282,15 @@ label {
     color: white;
     background-size: cover;
     text-align: center;
+    filter: brightness(60%);
+    z-index: 10;
 }
 
 .card-front > h2 {
+    z-index: 99;
     font-size: 32px;
     height: 100%;
-    line-height: 300px;
+    line-height: 280px;
     vertical-align: middle;
 }
 
