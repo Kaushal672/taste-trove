@@ -86,7 +86,7 @@ header.grow {
 }
 
 .nav-item > a:hover {
-    color: #29bf12;
+    color: #ff6000;
     font-size: 20px;
 }
 
@@ -98,7 +98,7 @@ header.grow {
 
 .logo-container > h4 {
     margin-left: 8px;
-    color: #00843c;
+    color: #f94144;
     font-family: 'Pacifico', cursive;
     font-weight: 400;
     font-size: 24px;
@@ -115,7 +115,7 @@ header.grow {
 .search-bar_container {
     position: relative;
     width: 20rem;
-    background: #29bf12;
+    background: #f94144;
     border-radius: 10px;
     height: 40px;
     margin-left: 10px;
@@ -148,7 +148,8 @@ input[type='search'] {
     width: 50px;
     font-weight: bold;
     font-size: 16px;
-    background: #29bf12;
+    background: #f94144;
+    color: white;
     border-radius: 0px 10px 10px 0px;
 }
 
@@ -175,7 +176,7 @@ label {
     display: inline-block;
     width: 100px;
     height: 40px;
-    background: linear-gradient(to right, #02b35a, #00843c);
+    background: linear-gradient(to right, #ff7a7d, #f94144);
     padding: 10px;
     color: white;
     text-align: center;
@@ -184,7 +185,7 @@ label {
 }
 
 .login-btn > a:hover {
-    background: #00843c;
+    background: #f94144;
     color: white;
     font-size: 18px;
 }
