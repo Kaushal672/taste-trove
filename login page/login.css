@@ -33,8 +33,7 @@ body::before {
     padding: 30px;
     text-align: center;
     border: 1px solid #29bf12;
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: brightness(0.3);
 }
 
 form {
