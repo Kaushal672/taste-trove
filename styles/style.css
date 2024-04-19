@@ -274,14 +274,14 @@ label {
     position: absolute;
     padding: 15px;
     color: white;
-    bottom: -230px;
+    transform: translateY(75%);
     background: linear-gradient(
         180deg,
         hsla(0, 0%, 0%, 0) 0%,
         hsla(0, 0%, 0%, 0.3) 10%,
         hsl(0, 0%, 0%) 100%
     );
-    transition: all 0.3s 0.7s ease-out;
+    transition: transform 0.3s 0.7s ease-out;
 }
 
 .card-content > span {
@@ -319,7 +319,7 @@ label {
 }
 
 .card:hover > .card-content {
-    bottom: 0px;
+    transform: translateY(0%);
     transition: all 0.3s ease-in;
 }
 
@@ -342,6 +342,6 @@ label {
     width: 140px;
 }
 
-.explore-recipe {
+.trending-recipe {
     margin-top: 180px;
 }
