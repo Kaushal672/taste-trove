@@ -368,6 +368,15 @@ label {
     font-weight: 500;
 }
 
+.recipe-card a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
 .recipe-card a svg {
     position: absolute;
     color: #ff916c;
@@ -382,9 +391,10 @@ label {
     height: 30px;
 }
 
-.interactable span:nth-child(2) {
+.interactable > span {
     margin-top: 10px;
     margin-left: auto;
+    z-index: 50;
 }
 
 .recipe-card__description {
