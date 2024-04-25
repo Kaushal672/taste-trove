@@ -1,0 +1,14 @@
+#total-results {
+    margin-top: 140px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.search-result__container {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    padding: 40px 0;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
