@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+.recipe-container {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.recipe-container > img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.recipe-container > h1 {
+    margin-bottom: 20px;
+}
+
+.recipe-content {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+
+.recipe-category {
+    font-size: 20px;
+    font-weight: 600;
+    color: #5b5b5b;
+}
+
+.ingredients-container {
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.ingredients-container > h4 {
+    font-size: 28px;
+}
+
+.ingredient-item {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.instruction-container > h4 {
+    font-size: 28px;
+}
+
+.instruction-container > p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.c_r-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* .rating {
+    background-color: #d9e5d6;
+    padding: 5px;
+    border-radius: 5px;
+} */
+
+.rating-star .fa-star {
+    margin-bottom: 4px;
+}
+
+.rating > a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.rating-star {
+    display: inline-block;
+}
+
+.reviews-container {
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.reviews-container > h2 {
+    margin-top: 20px;
+}
+
+.reviews-container > div {
+    margin-top: 20px;
+}
+
+.rate-container {
+    margin-bottom: 20px;
+}
+
+.rate-container > h3 {
+    font-weight: 400;
+}
+
+.btn {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn-submit {
+    color: white;
+    background-color: #fb5b25;
+}
+
+.btn-submit:hover {
+    background-color: #ff4000;
+}
+
+.form-rating {
+    margin: 1rem 0;
+}
+
+.form-rating .fa-star {
+    cursor: pointer;
+}
+
+.form-rating .fa-star:hover {
+    transform: scale(1.2);
+}
+
+textarea {
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: #eeeeee;
+    margin-bottom: 10px;
+}
+
+.user-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-options {
+    position: relative;
+}
+
+.user-options > span {
+    cursor: pointer;
+}
+
+.user-modal {
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    border: 1px solid #a5a5a5;
+    top: 20px;
+    right: 12px;
+    border-radius: 8px;
+    z-index: 50;
+}
+
+.user-modal > .btn:hover {
+    color: red;
+}
+
+.comment-container {
+    margin: 15px 0;
+}
