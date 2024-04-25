@@ -228,12 +228,13 @@ label {
 
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    height: 100%;
 }
 
 .content {
-    padding: 20px;
     display: flex;
     position: relative;
     width: 60%;
@@ -250,6 +251,7 @@ label {
     justify-content: space-between;
     position: absolute;
     top: -150px;
+    left: 0;
     margin-bottom: 200px;
 }
 
@@ -345,10 +347,16 @@ label {
 .trending-recipe {
     margin-top: 200px;
     width: 100%;
+    margin-bottom: 30px;
+}
+
+.trending-recipe > h2 {
+    font-size: 32px;
 }
 
 .trending-content {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -421,6 +429,6 @@ label {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.checked {
+.fa-star {
     color: orange;
 }
