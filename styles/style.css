@@ -406,7 +406,7 @@ label {
     height: 30px;
 }
 
-.fa-bookmark {
+.recipe-card .fa-bookmark {
     position: absolute;
     top: 200px;
     left: 88%;
