@@ -353,13 +353,15 @@ input[type='search']:not(:placeholder-shown) + button {
 }
 
 .trending-recipe {
-    margin-top: 200px;
+    margin-top: 300px;
     width: 100%;
     margin-bottom: 30px;
 }
 
 .trending-recipe > h2 {
+    text-align: center;
     font-size: 32px;
+    margin-bottom: 50px;
 }
 
 .trending-content {
