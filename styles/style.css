@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -87,6 +89,14 @@ header.grow {
 .nav-item:first-child {
     margin-left: auto;
 }
+.logo-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
 
 .nav-item {
     list-style: none;
@@ -114,6 +124,7 @@ header.grow {
     display: flex;
     width: 300px;
     align-items: center;
+    position: relative;
 }
 
 .logo-container > h4 {
@@ -580,14 +591,15 @@ button.active > span {
 .tabs-content {
     position: absolute;
     display: none;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .tabs-content > img {
     width: 350px;
     height: 250px;
     object-fit: cover;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .tab-details {
