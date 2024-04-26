@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 header {
     height: 120px;
     width: 100%;
@@ -162,7 +169,7 @@ input[type='search']:not(:placeholder-shown) + button {
     display: block;
 }
 
-label {
+.search-bar_container label {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
     padding: 0;
