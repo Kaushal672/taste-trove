@@ -22,6 +22,9 @@
             integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <script type="module" defer src="/js/script.js"></script>
         <title>Recipe</title>
     </head>
@@ -43,6 +46,13 @@
                     <button type="submit" class="search-btn">Go</button>
                 </div>
                 <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href=""
+                            ><span class="material-symbols-outlined">
+                                favorite
+                            </span></a
+                        >
+                    </li>
                     <li class="nav-item"><a href="/register">Register</a></li>
                     <li class="nav-item login-btn">
                         <a href="/login page/login.html">Login</a>
@@ -125,6 +135,92 @@
                                     collection of dessert recipes, guaranteed to
                                     satisfy cravings and impress guests with
                                     every delightful bite."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="use-cases__container">
+                    <h2>Use Cases</h2>
+                    <div class="tabs-container">
+                        <div class="tabs-container__buttons">
+                            <button class="tab-button active" data-index="1">
+                                <span class="material-symbols-outlined">
+                                    manage_search </span
+                                >Recipe Analysis
+                            </button>
+                            <button class="tab-button" data-index="2">
+                                <span class="material-symbols-outlined">
+                                    inventory_2 </span
+                                >Recipe Management
+                            </button>
+                            <button class="tab-button" data-index="3">
+                                <span class="material-symbols-outlined">
+                                    calendar_month </span
+                                >Meal Planning
+                            </button>
+                            <button class="tab-button" data-index="4">
+                                <span class="material-symbols-outlined">
+                                    shopping_bag </span
+                                >Shoppable Recipes
+                            </button>
+                        </div>
+                        <hr />
+                        <div class="tabs-content tab-content-1 tab-active">
+                            <img src="assets/recipe-analysis.jpg" alt="" />
+                            <div class="tab-details">
+                                <h3>Special Diets/Intolerances</h3>
+                                <p>
+                                    We automatically analyze recipes to check
+                                    for ingredients that contain common
+                                    allergens, such as wheat, dairy, eggs, soy,
+                                    nuts, etc. We also determine whether a
+                                    recipe is vegan, vegetarian, Paleo friendly,
+                                    Whole30 compliant, and more.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tabs-content tab-content-2">
+                            <img src="assets/reicpe-management.jpg" alt="" />
+                            <div class="tab-details">
+                                <h3>Search & Organize</h3>
+                                <p>
+                                    We make it easy to search recipe and not
+                                    just any recipe search. Our semantic search
+                                    is fast, accurate, and pretty darn smart.
+                                    "Gluten free nut free dessert without
+                                    apples"? Easy as pie. Or create your own
+                                    recipe manager. It's all possible. Have your
+                                    own recipe database? Great! Let us help you
+                                    get it under control. With our website, you
+                                    will be able to find the recipes you want.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tabs-content tab-content-3">
+                            <img src="assets/plan-meals.jpg" alt="" />
+                            <div class="tab-details">
+                                <h3>Plan your meals</h3>
+                                <p>
+                                    Plan your meals for the week using recipes
+                                    or even your own brand of packaged foods.
+                                    The daily nutritional information is
+                                    calculated automatically.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tabs-content tab-content-4">
+                            <img
+                                src="https://plus.unsplash.com/premium_photo-1661409279183-569bfddb7100?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" />
+                            <div class="tab-details">
+                                <h3>Shoppable Recipes</h3>
+                                <p>
+                                    Finally! An all-in-one solution for cooking
+                                    at home. Youcan pick your recipes and order
+                                    all the ingredients from an online grocer to
+                                    have everything delivered or ready for
+                                    pickup.
                                 </p>
                             </div>
                         </div>

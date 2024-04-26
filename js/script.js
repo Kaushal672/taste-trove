@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
 // smooth scroll for reiview
 document
     .querySelector('.scroll-to__link')
-    .addEventListener('click', function (e) {
+    ?.addEventListener('click', function (e) {
         e.preventDefault();
         document
             .getElementById('reviews__section')
@@ -25,7 +25,7 @@ document
     });
 
 // fill review stars when clicked
-document.querySelector('.form-rating').addEventListener('click', function (e) {
+document.querySelector('.form-rating')?.addEventListener('click', function (e) {
     e.preventDefault();
 
     if (e.target.classList.contains('fa-star')) {
@@ -43,7 +43,7 @@ document.querySelector('.form-rating').addEventListener('click', function (e) {
 });
 
 // handle the click to event to open the popup options
-document.querySelector('.comments').addEventListener('click', function (e) {
+document.querySelector('.comments')?.addEventListener('click', function (e) {
     e.preventDefault();
 
     if (e.target.classList.contains('ellipsis')) {
@@ -64,3 +64,27 @@ function handleClickOutside(elem, mdl) {
 
     document.addEventListener('click', outSideClickListener);
 }
+
+// tab content
+
+document
+    .querySelector('.tabs-container__buttons')
+    ?.addEventListener('click', function (e) {
+        e.preventDefault();
+        const buttonClicked = e.target.closest('.tab-button');
+
+        if (!buttonClicked) return;
+        console.log(buttonClicked, buttonClicked.dataset.index);
+        document
+            .querySelectorAll('.tab-button')
+            .forEach((el) => el.classList.remove('active'));
+        document
+            .querySelectorAll('.tabs-content')
+            .forEach((el) => el.classList.remove('tab-active'));
+
+        buttonClicked.classList.add('active');
+
+        document
+            .querySelector(`.tab-content-${buttonClicked.dataset.index}`)
+            .classList.add('tab-active');
+    });
