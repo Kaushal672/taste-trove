@@ -12,7 +12,6 @@ body {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    background-color: #eff1ed;
 }
 
 h1,
@@ -23,7 +22,7 @@ h4 {
 }
 
 header {
-    height: 120px;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -37,7 +36,6 @@ header {
 header.shrink {
     animation: shrink 300ms;
     height: 80px;
-    background-color: white;
 }
 
 header.shrink .logo {
@@ -47,7 +45,7 @@ header.shrink .logo {
 
 @keyframes shrink {
     0% {
-        height: 120px;
+        height: 100px;
     }
 
     100% {
@@ -57,7 +55,7 @@ header.shrink .logo {
 
 header.grow {
     animation: grow 300ms;
-    height: 120px;
+    height: 100px;
 }
 
 @keyframes grow {
@@ -65,7 +63,7 @@ header.grow {
         height: 80px;
     }
     100% {
-        height: 120px;
+        height: 100px;
     }
 }
 
@@ -228,10 +226,11 @@ input[type='search']:not(:placeholder-shown) + button {
     padding-top: 50px;
     display: flex;
     justify-content: center;
+    background-color: #eff1ed;
 }
 
 .banner-container > div {
-    background-image: url('/assets/banner7.jpg');
+    background-image: url('../assets/banner7.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -254,6 +253,8 @@ input[type='search']:not(:placeholder-shown) + button {
     margin-top: 10px;
     width: 60%;
     text-align: justify;
+    line-height: 30px;
+    color: #696d75;
 }
 
 .container {
@@ -289,92 +290,42 @@ input[type='search']:not(:placeholder-shown) + button {
 
 .card-container {
     width: 270px;
-    height: 320px;
+    height: 430px;
 }
 
 .card {
     width: 100%;
     height: 100%;
     position: relative;
-    background-size: cover;
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: 0 1px 65px 0 rgba(0, 0, 0, 0.08);
+    background-color: white;
+    padding-top: 20px;
 }
 
 .card-content {
     height: 100%;
     width: 100%;
     position: absolute;
-    padding: 15px;
-    color: white;
-    transform: translateY(75%);
-    background: linear-gradient(
-        180deg,
-        hsla(0, 0%, 0%, 0) 0%,
-        hsla(0, 0%, 0%, 0.3) 10%,
-        hsl(0, 0%, 0%) 100%
-    );
-    transition: transform 0.3s 0.7s ease-out;
-}
-
-.card-content > span {
-    display: inline-block;
-    width: 0;
-    height: 6px;
-    background-color: yellow;
-    transition: width 0.3s 0.4s ease-out;
-    margin: 5px 0;
+    padding: 15px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-content > h2 {
-    font-size: 28px;
-    color: white;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .card-content > p {
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
+    color: #696d75;
 }
 
-.card-container:nth-child(1) .card {
-    background-image: url('https://images.unsplash.com/photo-1590330813083-fc22d4b6a48c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-.card-container:nth-child(2) .card {
-    background-image: url('https://images.unsplash.com/photo-1463183547458-6a2c760d0912?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-.card-container:nth-child(3) .card {
-    background-image: url('https://images.unsplash.com/photo-1563865436874-9aef32095fad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-.card-container:nth-child(4) .card {
-    background-image: url('https://plus.unsplash.com/premium_photo-1669557209110-34d9a507d1f9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-.card:hover > .card-content {
-    transform: translateY(0%);
-    transition: all 0.3s ease-in;
-}
-
-.card:hover p {
-    opacity: 1;
-    transition: opacity 0.3s 0.7s ease-in;
-}
-
-.card-container:nth-child(1) .card:hover span {
-    width: 120px;
-}
-
-.card-container:nth-child(2) .card:hover span {
-    width: 160px;
-}
-.card-container:nth-child(3) .card:hover span {
-    width: 180px;
-}
-.card-container:nth-child(4) .card:hover span {
-    width: 140px;
+.card-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
 }
 
 .trending-recipe {
@@ -385,8 +336,8 @@ input[type='search']:not(:placeholder-shown) + button {
 
 .trending-recipe > h2 {
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 50px;
+    font-size: 36px;
+    margin-bottom: 80px;
 }
 
 .trending-content {
@@ -412,7 +363,7 @@ input[type='search']:not(:placeholder-shown) + button {
     font-weight: 500;
 }
 
-.recipe-card a::before {
+.recipe-card .card-link::before {
     content: '';
     position: absolute;
     top: 0;
@@ -484,6 +435,7 @@ input[type='search']:not(:placeholder-shown) + button {
 footer {
     background-color: #111;
     margin-top: auto;
+    z-index: 100;
 }
 .footerContainer {
     width: 100%;
@@ -544,8 +496,7 @@ footer {
 
 .use-cases__container {
     height: 600px;
-    margin-top: 300px;
-    margin-bottom: 100px;
+    margin-top: 400px;
 }
 
 .use-cases__container > h2 {
@@ -618,4 +569,39 @@ button.active > span {
 
 .tab-active {
     display: flex;
+}
+
+.drop-down__container {
+    position: relative;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    width: 150px;
+    background: linear-gradient(to right, #ff916c, #f94c10);
+}
+
+.drop-down__container {
+    padding: 30px 0;
+}
+
+.drop-down__container:hover .drop-down,
+.drop-down:hover {
+    display: block;
+}
+
+.drop-down__item {
+    padding: 8px 18px;
+}
+
+.drop-down__item > a {
+    text-decoration: none;
+    color: white;
+}
+
+.drop-down__item:hover {
+    background-color: #ffa080;
 }

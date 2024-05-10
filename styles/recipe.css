@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
+.container {
+    align-items: flex-start;
+}
 .recipe-container {
+    padding-left: 300px;
+    position: relative;
     margin-top: 140px;
     display: flex;
-    flex-direction: column;
-    width: 70%;
+    width: 50%;
     height: 100%;
+    flex-direction: column;
 }
 
 .recipe-container > img {
@@ -16,11 +21,13 @@
 
 .recipe-container > h1 {
     margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 300;
+    color: black;
 }
 
 .recipe-content {
     width: 100%;
-    height: 100%;
     margin: 20px 0;
 }
 
@@ -28,6 +35,7 @@
     font-size: 20px;
     font-weight: 600;
     color: #5b5b5b;
+    text-transform: capitalize;
 }
 
 .ingredients-container {
@@ -37,19 +45,38 @@
 .description {
     font-size: 18px;
     text-align: justify;
+    margin-bottom: 20px;
+}
+
+.ingredients-container {
+    margin: 20px 0;
 }
 
 .ingredients-container > h4 {
     font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
 }
 
 .ingredient-item {
     margin-left: 50px;
     font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.instruction-container {
+    margin: 20px 0;
 }
 
 .instruction-container > h4 {
     font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.instruction-steps > li {
+    margin-bottom: 10px;
+    margin-left: 50px;
 }
 
 .instruction-container > p {
@@ -91,10 +118,12 @@
 .reviews-container {
     width: 70%;
     margin-bottom: 30px;
+    padding-left: 300px;
 }
 
 .reviews-container > h2 {
     margin-top: 20px;
+    color: black;
 }
 
 .reviews-container > div {
@@ -122,6 +151,12 @@
 .btn-submit {
     color: white;
     background-color: #fb5b25;
+}
+
+.btn-dlt {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
 }
 
 .btn-submit:hover {
@@ -180,4 +215,10 @@ textarea {
 
 .comment-container {
     margin: 15px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #898989;
+}
+
+.comment-container:last-child {
+    border-bottom: none;
 }

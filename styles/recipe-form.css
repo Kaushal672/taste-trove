@@ -8,7 +8,7 @@
     height: 100%;
 }
 
-form {
+.add-form {
     padding: 30px 40px;
     border-radius: 10px;
     background-color: #f4f7f8;
@@ -24,6 +24,7 @@ h2 {
     margin-bottom: 20px;
     color: #000;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .input-field {
@@ -48,7 +49,7 @@ h2 {
 .input-field > input {
     background-color: #e8eeef;
     border: none;
-    padding: 15px;
+    padding: 10px;
     color: #8a97a0;
     font-size: 1.1rem;
 }
@@ -62,7 +63,7 @@ h2 {
     border: none;
 }
 
-select option {
+.add-form select option {
     font-weight: 300;
     font-size: 1.1rem;
     background: #e8eeef;
@@ -81,7 +82,7 @@ select option {
     font-size: 1.1rem;
 }
 
-button {
+.add-form button {
     border: none;
     padding: 12px 20px;
     cursor: pointer;
@@ -92,6 +93,6 @@ button {
     background: #ed6031;
 }
 
-button:hover {
+.add-form button:hover {
     background: #ff0000;
 }

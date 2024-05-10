@@ -44,8 +44,6 @@ document.querySelector('.form-rating')?.addEventListener('click', function (e) {
 
 // handle the click to event to open the popup options
 document.querySelector('.comments')?.addEventListener('click', function (e) {
-    e.preventDefault();
-
     if (e.target.classList.contains('ellipsis')) {
         let modal = e.target.nextElementSibling;
         modal.style.display = 'block';
@@ -74,10 +72,11 @@ document
         const buttonClicked = e.target.closest('.tab-button');
 
         if (!buttonClicked) return;
-        console.log(buttonClicked, buttonClicked.dataset.index);
+
         document
             .querySelectorAll('.tab-button')
             .forEach((el) => el.classList.remove('active'));
+
         document
             .querySelectorAll('.tabs-content')
             .forEach((el) => el.classList.remove('tab-active'));

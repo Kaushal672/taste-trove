@@ -7,16 +7,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+.container {
     width: 100%;
-    padding: 0 10px;
+    height: 100%;
+    z-index: 1;
 }
 
-body::before {
+.container::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -28,6 +25,8 @@ body::before {
 }
 
 .wrapper {
+    margin-top: 220px;
+    margin-bottom: 50px;
     width: 400px;
     border-radius: 8px;
     padding: 30px;
@@ -41,7 +40,7 @@ form {
     flex-direction: column;
 }
 
-h2 {
+form > h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #f94c10;
