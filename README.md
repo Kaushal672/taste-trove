@@ -1,6 +1,10 @@
 # Taste Trove - Recipe Blog Site
 
-Taste Trove is a recipe blog site dedicated to sharing delicious recipes from around the world. Whether you're a seasoned chef or a kitchen novice, you'll find inspiration for your next culinary adventure here.
+Taste Trove is a recipe blog site dedicated to sharing delicious recipes from around the world. Whether you're a seasoned chef or a kitchen novice, you'll find 
+inspiration for your next culinary adventure here.
+
+## Live Preview
+https://taste-trove.000webhostapp.com/
 
 ## Technologies Used
 - Frontend: HTML, CSS, JavaScript 
